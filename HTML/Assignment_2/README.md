@@ -24,7 +24,7 @@ email, password, birthday, favorite color, and more.
 1.  Download or clone the repository:
 
     ``` bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/Moein-Moatali-2006/WebSite
     ```
 
 2.  Open `index.html` in any web browser.

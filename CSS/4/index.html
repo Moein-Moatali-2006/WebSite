@@ -15,9 +15,15 @@
             {
                 color: blue;
                 text-align: right;
-                border-style: solid;
+                border-right-style: solid;
+                border-left-style: dotted;
+                border-top-style: double;
+                border-bottom-style: dashed;
                 border-width: 7px;
-                /* border-color: purple; */
+                border-right-color: red;
+                border-left-color: green;
+                border-top-color: black;
+                border-bottom-color: purple;
                 border-radius: 15px;
                 padding: 10px;
             }
@@ -42,6 +48,8 @@
             {
                 text-align: right;
                 direction: ltr;
+                background-color: khaki;
+                padding: 5px;
             }
 
             h5
@@ -62,12 +70,28 @@
                 color: red;
                 border-radius: 20px;
                 padding: 10px;
+                margin: 10px;
             }
 
             button
             {
                 padding: 30px;
                 background-color: lightskyblue;
+            }
+
+            div
+            {
+                background-color: yellowgreen;
+                width: 200px;
+                height: 300px;
+                padding: 20px;
+                border-style: solid;
+                margin: 10px;
+            }
+
+            img
+            {
+                width: 100px;
             }
 
         </style>
@@ -77,16 +101,28 @@
         <h1>Hello CSS :)</h1>
         <a href="google.com"> روی من کلیک کن</a>
         <h2>This is H2 text</h2>
-        <h3>این یک متن H3  است</h3>
-        <h4>این یک تگ H4 است</h4>
+
+        <div> 
+            <h3>این یک متن H3  است</h3>
+            <h4>این یک تگ H4 است</h4>
+            <button>On/Off</button>
+        </div>
+
         <h5>این یک متن H5  است</h5>
         <h6>این یک متن H6 است</h6>
-        <form>
-            <input type="text" value="Moein">
-            <input type="submit">
-            <input type="reset">
-        </form>
-        <button>On/Off</button>
+
+        <div>
+            <form>
+                <input type="text" value="Moein">
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+
+        <div>
+            <img src="apple.png">
+        </div>
+
         <h1>This is another H1 text</h1>
     </body>
 </html>

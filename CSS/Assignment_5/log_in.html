@@ -4,6 +4,9 @@
         <meta name="author" content="Moein Moatali">
         <title>Log in</title>
         <style>
+            body{
+                background: radial-gradient(circle at top left, #a000ff, #ff66cc);
+            }
             h1{
                 text-align: center;
                 position: absolute;
@@ -40,11 +43,7 @@
                 position: absolute;
                 top: 245px;
                 left: 495px;
-            }
-
-            #checkbox:{
-                color: purple;
-                background-color: purple;
+                accent-color: purple;
             }
 
             #remember{
@@ -76,6 +75,10 @@
                 top: 400px;
                 left: 540px;
                 width: 100px;
+                color: blue;
+                background-color: white;
+                border-color: white;
+                border-style: solid;
             }
 
             #google_icon{
@@ -83,12 +86,15 @@
                 top: 400px;
                 left: 650px;
                 width: 100px;
+                background-color: white;
+                border-color: white;
+                border-style: solid;
             }
-
+           
         </style>
     </head>
     <body>
-        <div>
+        <div id="d1">
             <h1>LOGIN</h1>
             <input type="email" id="email" value="✉️ Email">
             <input type="password" id="password" value="00000000">

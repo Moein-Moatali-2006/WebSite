@@ -5,7 +5,7 @@
         <title>Log in</title>
         <style>
             body{
-                background: radial-gradient(circle at top left, #a000ff, #ff66cc);
+                background: radial-gradient(circle at top left, #e658defb, #5330d3);
             }
             h1{
                 text-align: center;
@@ -77,7 +77,7 @@
                 width: 100px;
                 color: blue;
                 background-color: white;
-                border-color: white;
+                border-color: lightgray;
                 border-style: solid;
             }
 
@@ -87,14 +87,22 @@
                 left: 650px;
                 width: 100px;
                 background-color: white;
-                border-color: white;
+                border-color: lightgray;
                 border-style: solid;
+            }
+
+            #log_form{
+                border-style: solid;
+                margin: 50px 550px 300px 450px;
+                padding: 190px;
+                background-color: white;
+                border-color: white;
             }
            
         </style>
     </head>
     <body>
-        <div id="d1">
+        <form id="log_form">
             <h1>LOGIN</h1>
             <input type="email" id="email" value="✉️ Email">
             <input type="password" id="password" value="00000000">
@@ -104,6 +112,6 @@
             <p id="another_login">Or login with</p>
             <button id="facebook_icon"> <img src="img\facebook_icon.png" width="15px"> Facebook</button>
             <button id="google_icon"> <img src="img\google_icon.png" width="15px"> Google</button>
-        </div>
+        </form>
     </body>
 </html>

@@ -1,0 +1,70 @@
+#infinite_left{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 35px;
+    background-color: white;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 400px;
+    left: 450px;
+}
+
+
+#infinite_right{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 35px;
+    background-color: white;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 400px;
+    left: 650px;
+}
+
+
+#s1{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 35px;
+    background-color:red;
+    border-color: red;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 200px;
+    left: 550px;
+}
+
+#ci1{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 35px;
+    border-radius: 100%;
+    background-color: red;
+    border-color: red;
+    position: absolute;
+    top: 150px;
+    left: 499px;
+}
+
+#ci2{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 35px;
+    border-radius: 100%;
+    background-color: red;
+    border-color: red;
+    position: absolute;
+    top: 150px;
+    left: 601px;
+}

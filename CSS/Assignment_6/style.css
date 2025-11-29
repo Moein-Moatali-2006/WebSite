@@ -1,0 +1,56 @@
+#navbar {
+    border-radius: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: darkgreen;
+}
+
+#navbar li {
+    position: relative; 
+}
+
+#navbar li a {
+    border-style: solid;
+    border-radius: 40px;
+    border-color: goldenrod;
+    margin: 3px;
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sublist {
+    border-radius: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;        
+    top: 100%;                 
+    left: 0;                  
+    background: green;
+    display: none;        
+    min-width: 140px;
+}
+
+.sublist li {
+    border-radius: 20px;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+    color:black;
+    background-color: gold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#navbar li:hover .sublist {
+    display: block;       
+}
+
+.sublist li:hover {
+    background: black;
+    color: gold;
+}

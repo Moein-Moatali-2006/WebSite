@@ -67,3 +67,92 @@
 #text_customer{
     color: white;
 }
+
+#container_pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.pricing ul li{
+    list-style-type: none;
+    border-style: solid;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 120px 10px 120px;
+    border-width: 1px;
+}
+
+.btn_pricing{
+    background-color: rgb(18, 135, 133);
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-style: none;
+}
+
+.last_part_pricing{
+    background-color:rgba(0, 0, 0, 0.672);
+}
+
+#container_contact{
+    margin-top: 20px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.672);
+    display: flex;
+    align-items: center;
+
+}
+
+#contact_us h4, h3{
+    color: black;
+    margin: 2px;
+}
+
+
+#contact_us a{
+    color: black;
+    margin: 2px;
+    font-size: 40px;
+    text-decoration-color: aquamarine;
+}
+
+#contact_form{
+    margin-left: 300px;
+    width: 600px;
+    height: 170px;
+    background-color: white;
+}
+
+#btn_contact{
+    background-color: black;
+    color: white;
+    padding: 2px 20px 2px 20px;
+    margin-left: 420px;
+}
+
+#container_map iframe{
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+#the_last{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#the_last h3, h4{
+    color: white;
+}
+
+#the_last a img{
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    border-radius: 100%;
+}

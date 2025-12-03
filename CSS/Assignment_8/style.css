@@ -1,0 +1,380 @@
+body {
+    margin: 0px;
+    overflow-x: hidden; 
+}
+
+#Navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    padding: 0 15px; 
+}
+
+.top_list {
+    text-decoration: none;
+    margin: 8px;
+    color: white;
+    font-size: 14px; 
+    white-space: nowrap; 
+}
+
+#sea_image {
+    width: 100%;
+    height: 60vh; 
+    max-height: 500px; 
+    object-fit: cover;
+}
+
+.text_team {
+    text-align: center;
+    margin-top: 2px;
+    padding: 0 15px; 
+}
+
+#Container_our_team ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 0;
+    margin: 20px 0;
+}
+
+#Container_our_team ul li {
+    list-style-type: none;
+    margin: 15px; 
+    text-align: center;
+    flex: 1 0 200px; 
+    max-width: 250px;
+}
+
+.img_team {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease; 
+    object-fit: cover; 
+}
+
+.img_team:hover {
+    width: 150px; 
+    height: 150px;
+}
+
+#container_our_work {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 400px; 
+    background-color: rgba(0, 0, 0, 0.672);
+    padding: 20px 15px;
+}
+
+#container_our_work ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#container_our_work ul li {
+    flex: 1 0 300px; 
+    max-width: 350px;
+    margin: 10px;
+}
+
+#container_our_work ul li img {
+    width: 100%; 
+    height: 150px;
+    object-fit: cover; 
+}
+
+.our_work_customer {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#text_customer {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container_pricing {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: stretch; 
+    min-height: 300px; 
+    padding: 20px 15px;
+    gap: 20px; 
+}
+
+.pricing {
+    flex: 1 0 300px; 
+    max-width: 400px;
+}
+
+.pricing ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.pricing ul li {
+    list-style-type: none;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    background: white;
+}
+
+.last_part_pricing {
+    background-color: rgba(0, 0, 0, 0.672);
+    color: white;
+}
+
+.btn_pricing {
+    background-color: rgb(18, 135, 133);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+#container_contact {
+    margin-top: 20px;
+    min-height: 250px; 
+    background-color: rgba(0, 0, 0, 0.672);
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    gap: 30px; 
+}
+
+#contact_us {
+    flex: 1 0 300px;
+    max-width: 400px;
+    color: white;
+}
+
+#contact_us h4, #contact_us h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+#contact_us a {
+    color: white;
+    margin: 5px;
+    font-size: 24px; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+#contact_form {
+    flex: 1 0 300px;
+    max-width: 600px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#btn_contact {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0; 
+    display: block;
+}
+
+#container_map iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+#the_last {
+    width: 100%;
+    min-height: 50px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+#the_last h3, #the_last h4 {
+    color: white;
+    margin: 5px 0;
+}
+
+#the_last a img {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    border-radius: 100%;
+}
+
+.our_work_customer h4 {
+    color: black;
+    margin: 10px 0;
+}
+
+
+
+/* Surface */
+@media (max-width: 1024px) {
+    #Container_our_team ul li {
+        flex: 1 0 150px;
+        max-width: 200px;
+        margin: 10px;
+    }
+    
+    #contact_form {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #btn_contact {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .pricing ul li {
+        padding: 10px 60px;
+    }
+}
+
+/*  Mobile Mid */
+@media (max-width: 768px) {
+    #Navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .top_list {
+        margin: 5px 10px;
+        font-size: 13px;
+    }
+    
+    #sea_image {
+        height: 40vh;
+    }
+    
+    #Container_our_team ul {
+        flex-direction: column; 
+    }
+    
+    #Container_our_team ul li {
+        margin: 15px 0;
+        flex: 1 0 auto;
+        max-width: 100%;
+    }
+    
+    #container_our_work ul li {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+    
+    #container_pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .pricing ul li {
+        padding: 10px 20px;
+    }
+    
+    #container_contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #contact_us {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #contact_form {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    #the_last {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    #the_last h3, #the_last h4 {
+        margin: 5px;
+    }
+    
+    .img_team:hover {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .top_list {
+        margin: 3px 5px;
+        font-size: 12px;
+    }
+    
+    .img_team {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .img_team:hover {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #contact_us a {
+        font-size: 20px;
+    }
+    
+    #container_our_work ul li img {
+        height: 120px;
+    }
+    
+    .btn_pricing, #btn_contact {
+        padding: 8px 15px;
+        max-width: 150px;
+    }
+}

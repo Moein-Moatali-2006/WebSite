@@ -1,0 +1,121 @@
+#besco{
+    display: none;
+}
+
+header{
+    position: relative;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+#slider{
+    position: relative;
+    margin-top: 10px;
+}
+
+#slider #left{
+    left: 10px;
+}
+
+#slider #right{
+    right: 10px;
+}
+
+#slider img{
+    width: 100%;
+    height: 130px;
+}
+
+#slider button{
+    border-radius: 100%;
+    border-style: none;
+    position: absolute;
+    top: 48%;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+#slider button:hover{
+    opacity: 1;
+}
+
+header img{
+    width: 100px;
+}
+
+header h1{
+    display: inline;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#our_project{
+    background-color: gray;
+}
+
+.row .col-3{
+    padding: 20px;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.employee img{
+    width: 100%;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: lightgreen;
+}
+
+
+.row .col-4{
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.project img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .row .col-3, .row .col-4{
+        width: 50%;
+    }
+
+    header img{
+        display: none;
+    }
+}
+
+@media only print {
+    header{
+        display: none;
+    }
+
+    #our_project{
+    background-color: none ;
+    }
+
+    #besco{
+    display: block;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    body{
+        background-color: lightpink;
+    }
+}

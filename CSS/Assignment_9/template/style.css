@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    height: 600px;
+    background-color: lightgray;
+    border-bottom-right-radius: 25%;
+}
+
+#header_btn_login{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: palevioletred;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#header_btn_seller{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#header_image_pizza{
+    position: relative;
+    left: 0%;
+    top: 5%;
+    width: 60%;
+    height: 100%;
+}
+
+header h1{
+    direction: rtl;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    font-size: 50px;
+}
+
+#food_word{
+    color: rgb(167, 22, 46);
+}
+
+header h3{
+    direction: rtl;
+    position: absolute;
+    margin-top: 40px;
+    right: 5%;
+    top: 30%;
+    font-size: 25px;
+    color: rgb(93, 89, 89);
+}
+
+header input[type=search]{
+    direction: rtl;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    color: gray;
+    padding: 5px;
+    border-style: solid;
+    border-color: gray;
+}
+
+#container_type{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_type{
+    border-style: none;
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.child_type{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.child_type img{
+    width: 60%;
+    height: 60%;
+}
+
+h2{
+    direction: rtl;
+    font-size: 40px;
+    position: relative;
+    right: 20px;
+}
+
+
+
+
+
+

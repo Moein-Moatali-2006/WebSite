@@ -1,15 +1,15 @@
 header{
     width: 100%;
-    height: 600px;
+    height: 90%;
     background-color: lightgray;
     border-bottom-right-radius: 25%;
 }
 
 #header_btn_login{
     position: absolute;
-    top: 30px;
-    left: 30px;
-    font-size: 25px;
+    top: 5%;
+    left: 2%;
+    font-size: 150%;
     padding: 10px;
     background-color: palevioletred;
     color: white;
@@ -19,9 +19,9 @@ header{
 
 #header_btn_seller{
     position: absolute;
-    top: 30px;
-    left: 200px;
-    font-size: 25px;
+    top: 5%;
+    left: 15%;
+    font-size: 150%;
     color: black;
     padding: 10px;
     text-decoration: none;
@@ -40,7 +40,7 @@ header h1{
     position: absolute;
     right: 5%;
     top: 20%;
-    font-size: 50px;
+    font-size: 300%;
 }
 
 #food_word{
@@ -53,7 +53,7 @@ header h3{
     margin-top: 40px;
     right: 5%;
     top: 30%;
-    font-size: 25px;
+    font-size: 150%;
     color: rgb(93, 89, 89);
 }
 
@@ -91,9 +91,15 @@ header input[type=search]{
 .child_type{
     text-align: center;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: lightgray;
     border-radius: 25px;
     padding: 5px;
+    transition: border-radius 3s;
+}
+
+.child_type:hover{
+    background-color: gray;
+    border-radius: 100%;
 }
 
 .child_type img{
@@ -108,8 +114,161 @@ h2{
     right: 20px;
 }
 
+#container_food{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#container_food .col_food{
+    border-style: none;
+    position: relative;
+    padding: 5px;
+    width: 15%;
+}
+
+#container_food .col_food .child_food{
+    border-radius: 25px;
+    border-style: none;
+    background-color: rgb(230, 226, 226);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#container_food .col_food .child_food a img{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;     
+}
+
+#container_food .col_food .child_food:hover{
+    background-color: red;
+    box-shadow: 10px 10px 10px black;
+}
+
+#container_food .col_food .child_food a h3{
+    direction: rtl;
+    color: black;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    bottom: -10px;
+    right: 14px;
+}
 
 
+#container_footer{
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#container_footer #footer_left{
+    width: 50%;
+}
+
+#container_footer ul{
+    list-style: none;
+}
+
+#container_footer ul li{
+   direction: rtl;
+   margin: 7px;
+}
+
+#container_footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#container_footer #footer_right{ 
+    direction: rtl;
+    width: 50%;
+}
+
+#footer_right ul li{
+    display: inline;
+}
+
+#footer_right ul li img{
+    width: 40px;
+}
+
+#footer_right ul li img:hover{
+    width: 50px;
+}
+
+#footer_right h2{
+    color: darkred;
+    position: relative;
+    top: -20px;
+    font-size: 60px;
+}
+
+#footer_right h3{
+    position: relative;
+    right: 10px;
+    color: darkred;
+}
 
 
+@media (max-width: 480px){
 
+    body{
+        margin: 0px;
+    }
+
+    .col_type{
+    border-style: none;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline;
+    }
+
+    #container_food .col_food{
+        width: 30%;
+    }
+
+    #footer_right h3{
+        display: none;
+    }
+
+    #footer_right h2{
+        font-size: 40px;
+    }
+
+    #header_btn_seller{
+        top: 2%;
+        left: 45%;
+    }
+
+    #header_btn_login{
+        top: 2%;
+    }
+
+    header input[type=search]{
+        top: 350px;
+        width: 150px;
+        font-size: 12px;
+    }
+
+    header h3{
+        color: black;
+    }
+
+    #header_image_pizza{
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+
+    </head>
+    <body>
+        <h5 id="zaman"></h5>
+        <p id="gholi"></p>
+        <button id="my_btn">روی من کیلک کن</button>
+        <button id="my_btn_2">خوشگلاسیون</button>
+        <hr>
+        <img src="lamp_0.jpg" id="my_lamp">
+        <button id="btn_turn_on">روشن</button>
+        <button id="btn_turn_off">خاموش</button>
+
+        <button id="btn_unvisible">پنهان</button>
+        <button id="btn_visible">آشکار</button>
+
+        <hr>
+
+        <a href="#" id="my_link">برای دانلود اینجا کلیک کنید</a>
+        <button id="btn_pay">پرداخت الکترونیکی</button>
+
+
+        <script>
+            var my_text = document.getElementById("gholi");
+            var my_btn = document.getElementById("my_btn");
+            var my_btn_2 = document.getElementById("my_btn_2");
+            var z = document.getElementById("zaman");
+            var L = document.getElementById("my_lamp");
+            var btn_on = document.getElementById("btn_turn_on");
+            var btn_off = document.getElementById("btn_turn_off");
+
+            var btn_unvisible = document.getElementById("btn_unvisible");
+            var btn_visible = document.getElementById("btn_visible");
+
+            var link = document.getElementById("my_link");
+            var pardakht = document.getElementById("btn_pay");
+
+            pardakht.onclick = function(){
+                alert("پرداخت با موفقیت انجام شد - پول هات کم شد هاهاهاها");
+                link.href = "Screen-2024-11-20-230914(1).mp4";
+            }
+
+            btn_unvisible.onclick = function(){
+                L.style.display = none;
+            }
+
+            btn_on.onclick = function(){
+                L.src = "lamp_1.jpg";
+            }
+
+            btn_off.onclick = function(){
+                L.src = "lamp_0.jpg";
+            }
+        
+            my_btn.onclick = function(){
+                my_text.innerHTML = "Hello JavaScript";
+                z.innerHTML = Date();
+            }  
+
+            my_btn_2.onclick = function(){
+                my_text.style.color = "red";
+                z.style.color = "green";
+            }
+
+        </script>
+
+    </body>
+</html>

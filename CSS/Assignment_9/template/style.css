@@ -5,6 +5,24 @@ header{
     border-bottom-right-radius: 25%;
 }
 
+#dark_them{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+
+#light_them{
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+
 #header_btn_login{
     position: absolute;
     top: 5%;

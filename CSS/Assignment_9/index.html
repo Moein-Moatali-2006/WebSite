@@ -8,8 +8,11 @@
         <link type="image/icon" rel="icon" href="images\icon\icon.png">
         <link type="text/CSS" rel="stylesheet" href="template\style.css">
     </head>
-    <body>
+    <body id="body">
         <header>
+            <button id="dark_them">Dark</button>
+            <button id="light_them">Light</button>
+
             <img src="images\img.png" alt="pizza" id="header_image_pizza">
             <a href="#" id="header_btn_login">ورود  یا عضویت</a>
             <a href="#" id="header_btn_seller">ثبت نام فروشندگان</a>
@@ -17,6 +20,23 @@
             <h1>سفارش آنلاین <b id="food_word">غذا</b></h1>
             <h3>سفارش آنلاین غذا، میوه، نان، شیرینی و ...</h3>
             <input type="search" placeholder=" ابتدا آدرستان را انتخاب کنید.">
+
+            <script>
+                var body = document.getElementById("body");
+                var btn_dark = document.getElementById("dark_them");
+                var btn_light = document.getElementById("light_them");
+
+                btn_dark.onclick = function(){
+                    body.style.backgroundColor = "black";
+                    body.style.color = "white";
+                }
+
+                btn_light.onclick = function(){
+                    body.style.backgroundColor = "white";
+                    body.style.color = "black";
+                }
+
+            </script>
         </header>
 
         <div id="container_type">

@@ -3,8 +3,8 @@
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button class="android" id="left_head"></button>
-        <button class="android" id="right_head"></button>
+        <button class="android" id="left_hand"></button>
+        <button class="android" id="right_hand"></button>
         <button class="android" id="body"></button>
         <button class="android" id="left_foot"></button>
         <button class="android" id="right_foot"></button>
@@ -13,5 +13,36 @@
         <button class="android" id="right_eye"></button>
         <button class="android" id="left_ear"></button>
         <button class="android" id="right_ear"></button>
+
+        <script>
+            var btn_body = document.getElementById("body");
+            var btn_left_eye = document.getElementById("left_eye");
+            var btn_right_eye = document.getElementById("right_eye");
+            var btn_head = document.getElementById("head");
+            var btn_left_hand = document.getElementById("left_hand");
+            var btn_right_hand = document.getElementById("right_hand");
+
+
+            btn_body.onclick = function(){
+                btn_left_eye.style.backgroundColor = "black";
+                btn_right_eye.style.backgroundColor = "black";
+            }
+
+            btn_head.onclick = function(){
+                btn_left_eye.style.width = "25px";
+                btn_left_eye.style.height = "25px";
+                btn_right_eye.style.width = "25px";
+                btn_right_eye.style.height = "25px";
+            }
+
+            btn_left_hand.onclick = function(){
+                btn_left_hand.style.transform = "rotate(45deg)";
+            }
+
+            btn_right_hand.onclick = function(){
+                btn_right_hand.style.transform = "rotate(-45deg)";
+            }
+
+        </script>
     </body>
 </html>

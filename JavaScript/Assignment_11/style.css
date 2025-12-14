@@ -3,22 +3,24 @@
     border-style: none;
 }
 
-#left_head{
+#left_hand{
     position: absolute;
     top: 300px;
     left: 600px;
     width: 30px;
     height: 100px;
     border-radius: 25px;
+    transition: transform 3s;
 }
 
-#right_head{
+#right_hand{
     position: absolute;
     top: 300px;
     right: 550px;
     width: 30px;
     height: 100px;
     border-radius: 25px;
+    transition: transform 3s;
 }
 
 #body{

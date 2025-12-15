@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" id="tb-1">
+            <br>
+
+            <button id="btn-sum" type="button">+</button>
+            <button id="btn-equal" type="button">=</button>
+        </form>
+
+        <script>
+            var tb1 = document.getElementById("tb-1");
+            var btn_sum = document.getElementById("btn-sum");
+            var btn_equal = document.getElementById("btn-equal");
+            var a, b, c;
+
+            btn_sum.onclick = function(){
+                a = parseInt(tb1.value);
+                tb1.value = "";
+                alert("Enter number 2")
+            }
+
+            btn_equal.onclick = function(){
+                b = parseInt(tb1.value);
+                c = a + b;
+                tb1.value = c;
+            }
+
+        </script>
+    </body>
+</html>

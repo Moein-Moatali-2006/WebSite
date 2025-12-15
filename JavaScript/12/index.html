@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" id="tb-1">
+            <br>
+            <input type="text" id="tb-2">
+            <br>
+            <button id="btn-sum" type="button">+</button>
+            <button id="btn-min" type="button">-</button>
+            <br>
+            <input type="text" id="tb-3">
+        </form>
+
+        <script>
+            var tb1 = document.getElementById("tb-1");
+            var tb2 = document.getElementById("tb-2");
+            var tb3 = document.getElementById("tb-3");
+            var btn_sum = document.getElementById("btn-sum");
+            var btn_min = document.getElementById("btn-min");
+
+            btn_sum.onclick = function(){
+                var a = parseInt(tb1.value);
+                var b = parseInt(tb2.value);
+                var c = a + b;
+                tb3.value = c;
+            }
+
+            btn_min.onclick = function(){
+                var a = parseInt(tb1.value);
+                var b = parseInt(tb2.value);
+                var c = a - b;
+                tb3.value = c;
+            }
+        </script>
+    </body>
+</html>

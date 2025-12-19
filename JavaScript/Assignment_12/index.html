@@ -9,27 +9,205 @@
             <input type="text" id="show_page">
 
             <div id="numbers_operators">
-                <button class="btn">AC</button>
-                <button class="btn">C</button>
-                <button class="btn">%</button>
-                <button class="btn">÷</button>
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">×</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">-</button>
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">+</button>
-                <button class="btn">0</button>
-                <button class="btn">00</button>
-                <button class="btn">.</button>
-                <button class="btn">=</button>
+                <button class="btn" id="btn_all_clear">AC</button>
+                <button class="btn" id="btn_clear">C</button>
+                <button class="btn" id="btn_percent">%</button>
+                <button class="btn" id="btn_division">÷</button>
+                <button class="btn" id="btn_7">7</button>
+                <button class="btn" id="btn_8">8</button>
+                <button class="btn" id="btn_9">9</button>
+                <button class="btn" id="btn_multiple">×</button>
+                <button class="btn" id="btn_4">4</button>
+                <button class="btn" id="btn_5">5</button>
+                <button class="btn" id="btn_6">6</button>
+                <button class="btn" id="btn_minus">-</button>
+                <button class="btn" id="btn_1">1</button>
+                <button class="btn" id="btn_2">2</button>
+                <button class="btn" id="btn_3">3</button>
+                <button class="btn" id="btn_sum">+</button>
+                <button class="btn" id="btn_0">0</button>
+                <button class="btn" id="btn_00">00</button>
+                <button class="btn" id="btn_dot">.</button>
+                <button class="btn" id="btn_equal">=</button>
             </div>
         </div>
+
+        <script>
+            var show_page = document.getElementById("show_page");
+
+            var btn_0 = document.getElementById("btn_0");
+            var btn_00 = document.getElementById("btn_00");
+            var btn_1 = document.getElementById("btn_1");
+            var btn_2 = document.getElementById("btn_2");
+            var btn_3 = document.getElementById("btn_3");
+            var btn_4 = document.getElementById("btn_4");
+            var btn_5 = document.getElementById("btn_5");
+            var btn_6 = document.getElementById("btn_6");
+            var btn_7 = document.getElementById("btn_7");
+            var btn_8 = document.getElementById("btn_8");
+            var btn_9 = document.getElementById("btn_9");
+
+            var btn_AC = document.getElementById("btn_all_clear");
+            var btn_C = document.getElementById("btn_clear");
+            var btn_dot = document.getElementById("btn_dot");
+            var btn_equal = document.getElementById("btn_equal");
+
+            var btn_sum = document.getElementById("btn_sum");
+            var btn_min = document.getElementById("btn_minus");
+            var btn_div = document.getElementById("btn_division");
+            var btn_mul = document.getElementById("btn_multiple");
+            var btn_per = document.getElementById("btn_percent");
+
+            var number_1, number_2, result, operation;
+
+            btn_AC.onclick = function(){
+                show_page.value = "";
+            }
+
+            btn_C.onclick = function(){
+                show_page.value = "";
+            }
+
+            btn_0.onclick = function(){
+                show_page.value += "0";
+            }
+
+            btn_00.onclick = function(){
+                show_page.value += "00";
+            }
+
+            btn_1.onclick = function(){
+                show_page.value += "1";
+            }
+
+            btn_2.onclick = function(){
+                show_page.value += "2";
+            }
+
+            btn_3.onclick = function(){
+                show_page.value += "3";
+            }
+
+            btn_4.onclick = function(){
+                show_page.value += "4";
+            }
+
+            btn_5.onclick = function(){
+                show_page.value += "5";
+            }
+
+            btn_6.onclick = function(){
+                show_page.value += "6";
+            }
+
+            btn_7.onclick = function(){
+                show_page.value += "7";
+            }
+
+            btn_8.onclick = function(){
+                show_page.value += "8";
+            }
+
+            btn_9.onclick = function(){
+                show_page.value += "9";
+            }
+
+            btn_dot.onclick = function(){
+                show_page.value += ".";
+            }
+
+            btn_sum.onclick = function(){
+                number_1 = show_page.value;
+                if (number_1.includes(".")){
+                    number_1 = parseFloat(number_1);
+                }
+                else{
+                    number_1 = parseInt(number_1);
+                }
+                show_page.value = "";
+                operation = "+";
+            }
+
+            btn_min.onclick = function(){
+                number_1 = show_page.value;
+                if (number_1.includes(".")){
+                    number_1 = parseFloat(number_1);
+                }
+                else{
+                    number_1 = parseInt(number_1);
+                }
+                show_page.value = "";
+                operation = "-";
+            }
+
+            btn_mul.onclick = function(){
+                number_1 = show_page.value;
+                if (number_1.includes(".")){
+                    number_1 = parseFloat(number_1);
+                }
+                else{
+                    number_1 = parseInt(number_1);
+                }
+                show_page.value = "";
+                operation = "*";
+            }
+
+            btn_div.onclick = function(){
+                number_1 = show_page.value;
+                if (number_1.includes(".")){
+                    number_1 = parseFloat(number_1);
+                }
+                else{
+                    number_1 = parseInt(number_1);
+                }
+                show_page.value = "";
+                operation = "/";
+            }
+
+            btn_per.onclick = function(){
+                number_1 = show_page.value;
+                if (number_1.includes(".")){
+                    number_1 = parseFloat(number_1);
+                }
+                else{
+                    number_1 = parseInt(number_1);
+                }
+                result = (number_1 / 100);
+                show_page.value = result;
+            }
+
+            btn_equal.onclick = function(){
+                number_2 = show_page.value;
+                if (number_2.includes(".")){
+                    number_2 = parseFloat(number_2);
+                }
+                else{
+                    number_2 = parseInt(number_2);
+                }
+
+                if (operation == "+"){
+                    result = number_1 + number_2;
+                    show_page.value = result;
+                }
+                else if(operation == "-"){
+                    result = number_1 - number_2;
+                    show_page.value = result;
+                }
+                else if(operation == "*"){
+                    result = number_1 * number_2;
+                    show_page.value = result;
+                }
+                else if(operation == "/"){
+                    if (number_2 == 0){
+                        show_page.value = "Error";
+                    }
+                    else{
+                        result = number_1 / number_2;
+                        show_page.value = result;
+                    }
+                }
+            }
+
+        </script>
     </body>
 </html>

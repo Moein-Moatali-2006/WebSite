@@ -1,0 +1,36 @@
+#main{
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    background-color: red;
+}
+
+#main #show_page{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 15%;
+    background-color: black;
+}
+
+#main #numbers_operators{
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    left: 5%;
+    bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+#main #numbers_operators .btn{
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    font-size: 30px;
+}

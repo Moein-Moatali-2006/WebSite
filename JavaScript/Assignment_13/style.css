@@ -1,0 +1,48 @@
+body{
+    background-color: gray;
+}
+
+#title{
+    position: relative;
+    left: 33%;
+    font-size: x-large;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 33%;
+}
+
+.btn_radio{
+    margin-bottom: 10px;
+}
+
+#show_winner{
+    position: absolute;
+    color: rgb(7, 7, 113);
+    padding-left: 5px;
+    width: 30%;
+    left: 35%;
+    top: 13%;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(60, 60, 60, 0.5);
+    border-color: rgba(60, 60, 60, 0.8);
+    font-size: xx-large;
+}
+
+#score_board{
+    width: 33%;
+    background-color: rgb(190, 190, 190);
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+#new_game{
+    background-color: gray;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 3px;
+}

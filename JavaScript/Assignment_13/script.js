@@ -1,6 +1,8 @@
 var cell = document.getElementsByClassName("cell");
 var show_winner = document.getElementById("show_winner_text");
 var new_game = document.getElementById("new_game");
+var friend = document.getElementById("friend");
+var computer = document.getElementById("computer");
 
 var score_X_f = document.getElementById("score_X");
 var score_O_f = document.getElementById("score_O");
@@ -23,31 +25,75 @@ var main_board_b = [
 ];
 
 var ply = "player X"
+var game_mode = "friend";
+
+friend.addEventListener("change", function () {
+    if (this.checked) game_mode = "friend";
+});
+
+computer.addEventListener("change", function () {
+    if (this.checked) game_mode = "computer";
+});
+
+
+function computerMove() {
+    let emptyCells = [];
+
+    for (let i = 0; i <= 2; i++) {
+        for (let j = 0; j <= 2; j++) {
+            if (main_board_b[i][j] == null) {
+                emptyCells.push([i, j]);
+            }
+        }
+    }
+
+    if (emptyCells.length === 0) return;
+
+    let randIndex = Math.floor(Math.random() * emptyCells.length);
+    let [row, col] = emptyCells[randIndex];
+
+    main_board_b[row][col] = "O";
+    main_board_f[row][col].style.backgroundColor = "lightskyblue";
+    main_board_f[row][col].innerHTML = "O";
+    main_board_f[row][col].style.color = "blue";
+
+    ply = "player X";
+    check();
+}
+
 
 function game(row, col){
     if (main_board_b[row][col] == null){
 
-        if (ply ==  "player X"){
+        if (ply == "player X"){
             main_board_b[row][col] = "X";
             main_board_f[row][col].style.backgroundColor = "pink";
             main_board_f[row][col].innerHTML = "X";
             main_board_f[row][col].style.color = "red";
+
             ply = "player O";
-            check()
+            check();
+
+            if (game_mode === "computer") {
+                setTimeout(computerMove, 300);
+            }
         }
-        else if (ply ==  "player O"){
+
+        else if (ply == "player O" && game_mode === "friend"){
             main_board_b[row][col] = "O";
             main_board_f[row][col].style.backgroundColor = "lightskyblue";
             main_board_f[row][col].innerHTML = "O";
             main_board_f[row][col].style.color = "blue";
+
             ply = "player X";
-            check()
+            check();
         }
     }
     else{
         alert("This cell isn't null !");
     }
 }
+
 
 function check(){
     if (main_board_b[0][0] == "X" && main_board_b[0][1] == "X" && main_board_b[0][2] == "X"){

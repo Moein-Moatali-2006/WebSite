@@ -1,0 +1,41 @@
+/* ریست ساده */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* وسط‌چین کردن اسپینر */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/* کانتینر */
+.spinner-container {
+  width: 60px;
+  height: 60px;
+}
+
+/* اسپینر شبیه گوگل */
+.google-spinner {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #e0e0e0;
+  border-top: 6px solid #4285f4; /* آبی گوگل */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* انیمیشن چرخش */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

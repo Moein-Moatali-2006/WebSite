@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="author" content="Moein Moatali">
+        <meta name="keywords" content="Metronome">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <h1>Metronome</h1>
+
+        <h2 id="text_number">
+            <span style="font-size: 80px;" id="show_number">129</span>
+            BPM
+        </h2>
+
+        <button class="btn_range" id="btn_min">-</button>
+        <input type="range" min="40" max="218" step="1" id="range">
+        <button class="btn_range" id="btn_sum">+</button>
+
+        <button id="play" onclick="play()">Play</button>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

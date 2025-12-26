@@ -1,0 +1,25 @@
+#text_number{
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.btn_range{
+    border-radius: 100%;
+    border-style: none;
+    font-size: 30px;
+    color: blue;
+    background-color: white;
+}
+
+.btn_range:hover{
+    background-color: lightgray;
+}
+
+
+#play {
+    background-color: rgb(26, 26, 112);
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border-style: none;
+}

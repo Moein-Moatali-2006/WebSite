@@ -1,20 +1,64 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Moein Moatali">
-        <meta name="keywords" content="login, form">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Moein Moatali">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
 
-        <title>LOGIN</title>
-        <link rel="stylesheet" href="./style.css" type="text/css">
-    </head>
-    <body>
-        <button id="btn_start_login" onclick="show_items()">ثبت نام</button>
-        
-        <div id="main">
+<button id="startBtn">ثبت نام</button>
+<form id="loginForm" class="hidden">
 
+    <h2>ثبت نام</h2>
+
+    <label>نام</label>
+    <input type="text" required placeholder="Enter your name">
+
+    <label>ایمیل</label>
+    <input type="email" required placeholder="Enter your email">
+
+    <label>کلمه عبور</label>
+    <input type="password" required placeholder="Password">
+
+    <div class="radio-group">
+        <label>
+            <input type="radio" name="status" value="single" checked>
+            مجرد
+        </label>
+
+        <label>
+            <input type="radio" name="status" value="married">
+            متاهل
+        </label>
+    </div>
+
+    <!-- Married -->
+    <div id="marriedSection" class="hidden">
+
+        <label>نام همسر</label>
+        <input type="text" placeholder="Your wife's name">
+
+        <label>
+            <input type="checkbox" id="hasChild">
+            دارای فرزند
+        </label>
+
+        <div id="childrenSection" class="hidden">
+            <div class="child-buttons">
+                <button type="button" id="addChild" style="background-color: green;">+</button>
+                <button type="button" id="removeChild" style="background-color: red;">-</button>
+            </div>
         </div>
 
-        <script src="./script.js"></script>
-    </body>
+    </div>
+
+    <button type="submit" class="submit-btn">ثبت نهایی</button>
+
+</form>
+
+<script src="script.js"></script>
+</body>
 </html>

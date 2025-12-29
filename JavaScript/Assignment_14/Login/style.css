@@ -1,18 +1,65 @@
 body {
     background-color: gray;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: sans-serif;
 }
 
-#btn_start_login{
-    width: 30%;
-    height: 5%;
-    color: white;
+#startBtn {
+    width: 300px;
+    padding: 12px;
     background-color: darkblue;
-    border-color: darkblue;
-    font-size: x-large;
-    border-radius: 25px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
+form {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    direction: rtl;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.radio-group {
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.child-buttons button {
+    width: 40px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: x-large;
+}

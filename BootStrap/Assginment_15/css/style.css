@@ -1,0 +1,23 @@
+#navbar_logo{
+    background-color: rgb(31, 109, 83);
+    padding: 8px;
+    height: 100%;
+}
+
+.navbar_item:hover{
+    background-color: gray;
+}
+
+.image_circle{
+    width: 60%;
+    border-radius: 100px;
+}
+
+.image_hover:hover{
+    opacity: 0.7;
+}
+
+.mycard{
+    border-radius: 0px;
+    border-style: none;
+}

@@ -21,3 +21,11 @@
     border-radius: 0px;
     border-style: none;
 }
+
+.off_radius{
+    border-radius: 0px;
+}
+
+.social_media_logo{
+    width: 30px;
+}
